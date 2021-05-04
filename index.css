@@ -1,0 +1,214 @@
+body{
+    background-color: #F2F3F4;
+    font-family: 'Roboto', sans-serif;
+}
+.calculator{
+    width: 60%;
+    padding: 10px 100px 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #4c4c4c;
+}
+
+h{
+    font-size: 30px;
+    font-family: 'Bungee Inline';
+    font-weight: bold;
+}
+
+input{
+    margin: 10px auto 10px auto;
+    height: 30px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #c2c6c9;
+}
+input:focus{
+    box-shadow: 1px 1px 5px 5px #AED6F1;
+    border: 1px solid #5DADE2;
+    outline: none;
+}
+button:focus{
+    box-shadow: 1px 1px 5px 5px #AED6F1;
+    border: 1px solid #5DADE2;
+    outline: none;
+}
+select:focus{
+    box-shadow: 1px 1px 5px 5px #AED6F1;
+    border: 1px solid #5DADE2;
+    outline: none;
+}
+
+select{
+    margin: 10px auto 10px auto;
+    height: 34px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #c2c6c9;
+}
+.street{
+    width: 98%;
+}
+
+.address{
+    display: inline-block;
+    width: 30%;
+    margin: auto auto;
+  }
+  input[id=city]{
+      width: 90%;
+  }
+  select[id=state]{
+      width: 90%;
+  }
+  input[id=zip]{
+      width: 90%;
+  }
+  input[type=text]{
+      width: 90%;
+  }
+  
+  .purchaseCost{
+      display: inline-block;
+      width: 35%;
+  }
+  input[id=price]{
+      width: 90%;
+  }
+  input[id=closing]{
+      width: 90%;
+  }
+  input[id=arv]{
+      width: 90%;
+  }
+  input[id=repair]{
+      width: 90%;
+  }
+  .purchaseCostRate{
+      display: inline-block;
+      width: 30%;
+  }
+  input[id=interest]{
+      width: 90%;
+  }
+  input[id=points]{
+      width: 90%;
+  }
+  select[id=term]{
+      width: 90%;
+  }
+  input[id=income]{
+      width: 30%;
+  }
+  input[type=checkbox]:focus{
+      box-shadow: none;
+      outline: none;
+  }
+  .rehab{
+    display: none;
+  }
+  input[type=checkbox]{
+      vertical-align: middle;
+      margin-right: 10px;
+  }
+  .sliderDiv{
+      display:inline-block;
+      width: 35%;
+      margin: auto 70px auto auto;
+  }
+  
+  .slider{
+    width: 130%;
+  }
+  .sliderBar{
+    width: 95%;
+    cursor: grab;
+  }
+  input[type=range]:focus{
+      outline: none;
+      box-shadow:none;
+
+  }
+  .expenseRate{
+      display: inline-block;
+      width: 30%;
+  }
+  
+  input[id=insurance]{
+    width: 90%
+}
+input[id=maintenance]{
+    width: 90%
+}
+input[id=vacancy]{
+    width: 90%
+}
+input[id=capEx]{
+    width: 90%
+}
+input[id=management]{
+    width: 90%
+}
+input[id=utility]{
+    width: 90%
+}
+input[id=hoa]{
+    width: 90%
+}
+input[id=other]{
+    width: 90%
+}
+
+  input[type='submit']{
+      cursor: pointer;
+      margin: 10px auto;
+  }
+  .required:after{
+      content: ' *';
+      color: red;
+  }
+  input[type=submit]{
+      background-color: #1d96f4;
+      color: white;
+      width: 20%;
+      height: 40px;
+      font-size: 20px;
+      border: none;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+  }
+ 
+  button{
+      background-color:#1d96f4;
+      border: none;
+      border-radius: 5px 5px 5px 5px;
+      color: white;
+      width: 10%;
+      height: 40px;
+      font-size: 20px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      position: relative;
+      margin-left: 90%;
+      margin-top: 2%;
+      display: none;
+      cursor: pointer;
+  }
+  #reportParent{
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      box-shadow: 1px 1px 5px 5px #AED6F1;
+      border-radius: 5px 5px 5px 5px;
+      display: none;
+      padding-left: 10px;
+  }
+  .reportChild{
+      display: inline-block;
+      width: 49%;
+  }
+  .reportTitle{
+      font-weight: bold;
+      padding-top: 1px;
+      font-size: 35px;
+      text-align: center;
+      margin-left: -5%;
+
+  }

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="index.js"></script>
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Roboto&display=swap" rel="stylesheet">    
+  </head>
+  <body>
+    <div class='calculator'>
+        <div class='child'>
+
+            
+
+    <h>Property Information</h>
+    <br></br>
+    <div class='street'>
+    <label class='required'>Property Address</label>
+    <input type='text' id='address' name='address' placeholder='Street Address' class='require'>
+</div>
+    <div class='address'>
+    <label class='required'>City</label>
+    <input type='text' id='city' name='city' placeholder='City' class='require'>
+    </div>
+    <div class='address'>
+    <label class='required'>State</label>
+    <select id='state' name='state' class='require'>
+      <option value='' disabled selected hidden>State</option>
+      <option value='Alabama'>Alabama</option>
+      <option value='Alaska'>Alaska</option>
+      <option value='Arizona'>Arizona</option>
+      <option value='Arkansas'>Arkansas</option>
+      <option value='California'>California</option>
+      <option value='Colorado'>Colorado</option>
+      <option value='Connecticut'>Connecticut</option>
+      <option value='Delaware'>Delaware</option>
+      <option value='Florida'>Florida</option>
+      <option value='Georgia'>Georgia</option>
+      <option value='Hawaii'>Hawaii</option>
+      <option value='Idaho'>Idaho</option>
+      <option value='llinois'>llinois</option>
+      <option value='Indiana'>Indiana</option>
+      <option value='Iowa'>Iowa</option>
+      <option value='Kansas'>Kansas</option>
+      <option value='Kentucky'>Kentucky</option>
+      <option value='Louisiana'>Louisiana</option>
+      <option value='Maine'>Maine</option>
+      <option value='Maryland'>Maryland</option>
+      <option value='Massachusetts'>Massachusetts</option>
+      <option value='Michigan'>Michigan</option>
+      <option value='Minnesota'>Minnesota</option>
+      <option value='Mississippi'>Mississippi</option>
+      <option value='Missouri'>Missouri</option>
+      <option value='Montana'>Montana</option>
+      <option value='Nebraska'>Nebraska</option>
+      <option value='Nevada'>Nevada</option>
+      <option value='New Hampshire'>New Hampshire</option>
+      <option value='New Jersey'>New Jersey</option>
+      <option value='New Mexico'>New Mexico</option>
+      <option value='New York'>New York</option>
+      <option value='North Carolina'>North Carolina</option>
+      <option value='North Dakota'>North Dakota</option>
+      <option value='Ohio'>Ohio</option>
+      <option value='Oklahoma'>Oklahoma</option>
+      <option value='Oregon'>Oregon</option>
+      <option value='Pennsylvania'>Pennsylvania</option>
+      <option value='Rhode Island'>Rhode Island</option>
+      <option value='South Carolina'>South Carolina</option>
+      <option value='South Dakota'>South Dakota</option>
+      <option value='Tennessee'>Tennessee</option>
+      <option value='Texas'>Texas</option>
+      <option value='Utah'>Utah</option>
+      <option value='Vermont'>Vermont</option>
+      <option value='Virginia'>Virginia</option>
+      <option value='Washington'>Washington</option>
+      <option value='West Virginia'>West Virginia</option>
+      <option value='Wisconsin'>Wisconsin</option>
+      <option value='Wyoming'>Wyoming</option>
+      </select>
+      </div>
+      <div class='address'>
+      <lable class='required'>Zipcode</lable>
+      <input type='text' id='zip' name='zip' class='require'>
+      </div>
+      <br>
+
+    <h>Purchase</h>
+    <br>
+    <div class='purchaseCost'>
+    <label class='required'>Purchase Price</label>
+    <input type='number' id='price' name='price' placeholder='$' class='require'>
+    </div>
+    <div class='purchaseCost'>
+    <label class='required'>Purchase Closing Cost</label>
+    <input type='number' id='closing' name='closing' placeholder='$' class='require'>
+    </div>
+    <br>
+    <input type='checkbox' id='checkbox' name='checkbox'>
+    <label for='checkbox'>I will be rehabbing this property</label>
+    <div class='rehab' id='rehab'>
+        <div class='purchaseCost'>
+      <label>After Repair Value (ARV)</label>
+      <input type='number' id='arv' name='arv' placeholder='$'>
+    </div>
+    <div class='purchaseCost'>
+      <label>Repair Cost</label>
+      <input type='number' id='repair' name='repair' placeholder='$'>
+    </div>
+      </div>
+
+      <br>
+
+      <div class='sliderDiv'>
+      <label class='required'>Loan Amount $</label>
+      <div class='slider'>
+        <input type='range' min='5' max='100' value='50' class='sliderBar' id='myRange' class='require'>
+        </div>
+        </div>
+        <div class='sliderDiv'>
+        <p>Down Payment: $<span id='downPayment'></span>
+            <br>
+            <span id='sliderValue'></span>% of purchase price</p>
+        </div>
+        <div class='purchaseCostRate'>
+        <label class='required'>Interest Rate</label>
+        <input type='text' name='interest' id='interest' placeholder='%' class='require'>
+    </div>
+    <div class='purchaseCostRate'>
+        <label>Points Charged</label>
+        <input type='text' name='points' id='points' placeholder='Optional'>
+    </div>
+    <div class='purchaseCostRate'>
+        <label class='required'>Loan Term</label>
+        <select name='term' id='term' class='require'>
+            <option value='30'>30 Years</option>
+            <option value='15'>15 Years</option>
+    </select>
+    </div>
+        <br>
+        <h>Rental Income</h>
+        <br>
+        <label class='required'>Gross Monthly income</label>
+        <br>
+        <input type='text' name='income' id='income' placeholder='$' class='require'>
+        <br>
+        <h>Expenses</h>
+        <br>
+        <div class='expenseRate'>
+        <label class='required'>Property Taxes</label>
+        <input type='text' name='tax' id='tax' placeholder='$/year' class='require'>
+    </div>
+    <div class='expenseRate'>
+        <label class='required'>Insurance</label>
+        <input type='text' name='insurance' id='insurance' placeholder='$/year' class='require'>
+    </div>
+    <div class='expenseRate'>
+        <label class='required'>Repair & Maintenance</label>
+        <input type='text' name='maintenance' id='maintenance' placeholder='% of monthly income' class='require'>
+</div>
+<div class='expenseRate'>
+        <label class='required'>Vacancy</label>
+        <input type='text' name='vacancy' id='vacancy' placeholder='% of monthly income' class='require'>
+</div>
+<div class='expenseRate'>
+        <label class='required'>CapEx</label>
+        <input type='text' name='capEx' id='capEx' placeholder='% of monthly income' class='require'>
+</div>
+<div class='expenseRate'>
+        <label class='required'>Management Fee</label>
+        <input type='text' name='management' id='management' placeholder='% of monthly income' class='require'>
+</div>
+<div class='expenseRate'>
+        <label>Utility</label>
+        <input type='text' name='utility' id='utility' placeholder='$/year'>
+</div>
+<div class='expenseRate'>
+        <label>HOA</label>
+        <input type='text' name='hoa' id='hoa' placeholder='$/year'>
+</div>
+<div class='expenseRate'>
+        <label>Other</label>
+        <input type='text' name='other' id='other' placeholder='$/year'>
+</div>
+        <input type='submit' value='Get Report' name='submit' id='submit' onclick='expenses()'>
+
+        <div id='reportParent'>
+            <div class='reportTitle'>
+        <p><span id='propertyInfo'></span></p>
+    </div>
+    <div class='reportChild'>
+        <p><span id='expense'></span></p>
+        </div>
+        <div class='reportChild'>
+        <p><span id='mortgage'></span></p>
+        </div>
+        <div class='reportChild'>
+        <p><span id='pmi'></span></p>
+        </div>
+        <div class='reportChild'>
+        <p><span id='totalMonth'></span></p>
+        </div>
+        <div class='reportChild'>
+        <p><span id='totalAnnual'></span></p>
+        </div>
+        <div class='reportChild'>
+        <p><span id='annualGrossIncome'></span></p>
+        </div>
+        <div class='reportChild'>
+        <p><span id='annualNetIncome'></span></p>
+        </div>
+        <div class='reportChild'>
+        <p><span id='ROI'></span></p>
+        </div>
+    </div>
+
+        <button onclick='window.print()' id='print'>Print</button>
+        
+        
+
+        
+   
+
+    
+        
+
+
+        
+
+
+    </div>
+    </div>
+  </body>
+</html>

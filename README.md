@@ -1,2 +1,2 @@
 # Investment-calculator
-This app takes information about a potential investment property and spits out types of data representing potential return on investment based on the information input by the user.
+This app takes information about a potential investment property, which include purchase price, interest rate of the loan, down payment, rehab cost, mortgage, and other expenses, and spits out various types of data representing potential return on investment based on the information input by the user. Output information include total annual expense, mortgage by month, ROI, gross annual income, net annual income, and more. This app is a very useful tool when investigating whether a property could potentially be a profitable investment, or if you should forgo.
